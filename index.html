@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ระบบจัดตารางเรียน (CSS)</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            background-color: #f0f2f5;
+        }
+        /* เทคนิคดันขอบ iframe ขึ้นไป 28-30 pixel เพื่อซ่อนแถบ Google */
+        iframe {
+            width: 100%;
+            height: calc(100% + 30px);
+            border: none;
+            margin-top: -30px; 
+        }
+    </style>
+</head>
+<body>
+    <!-- เปลี่ยน URL ด้านล่างนี้เป็น URL เว็บแอป Google Apps Script ของคุณ -->
+    <iframe src="https://script.google.com/macros/s/.../exec"></iframe>
+</body>
+</html>
