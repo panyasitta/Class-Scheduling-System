@@ -1,0 +1,19 @@
+<script>
+(function () {
+  function start() {
+    var el = document.getElementById('lpss-core-script');
+    if (!el || !el.textContent) {
+      console.error('ไม่พบสคริปต์หลัก');
+      return;
+    }
+    var s = document.createElement('script');
+    s.text = el.textContent;
+    document.body.appendChild(s);
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', start, false);
+  } else {
+    start();
+  }
+})();
+</script>

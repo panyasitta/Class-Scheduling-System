@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CSS · ระบบจัดตารางเรียน</title>
+  <base target="_top">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800&family=Sarabun:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <?!= include('Styles') ?>
+</head>
+<body>
+  <div id="boot-loader" class="boot-loader">
+    <div class="boot-spinner">
+      <div class="spinner-ring"></div>
+      <div class="spinner-ring"></div>
+      <div class="spinner-ring"></div>
+    </div>
+    <div class="boot-text">กำลังโหลดระบบ…</div>
+  </div>
+
+  <div id="app" hidden></div>
+
+  <div id="modal-host"></div>
+  <div id="toast-host"></div>
+  <div id="spinner-overlay" class="spinner-overlay" hidden>
+    <div class="spinner-box">
+      <div class="spinner-orb">
+        <div class="spinner-ring spinner-ring-1"></div>
+        <div class="spinner-ring spinner-ring-2"></div>
+        <div class="spinner-ring spinner-ring-3"></div>
+        <div class="spinner-core"><i class="bi bi-stars"></i></div>
+      </div>
+      <div class="spinner-text">กำลังประมวลผล…</div>
+      <div class="spinner-dots"><span></span><span></span><span></span></div>
+    </div>
+  </div>
+
+  <?!= include('ScriptsCore') ?>
+  <?!= include('Scripts') ?>
+</body>
+</html>
